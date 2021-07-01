@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+}
+
+.flag {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.triangle {
+  height: 350px;
+  width: 350px;
+  background-color: red;
+  z-index: 1;
+  position: absolute;
+  top: 49px;
+  left: 0;
+  margin-left: -200px;
+  transform: rotate(-45deg);
+}
+
+.color_one {
+  height: 150px;
+  width: 800px;
+  background-color: black;
+}
+
+.color_two {
+  height: 150px;
+  width: 800px;
+  background-color: whitesmoke;
+}
+
+.color_three {
+  height: 150px;
+  width: 800px;
+  background-color: green;
+}
+
+/* bd flag part*/
+
+h1 {
+  color: coral;
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.bd_flag {
+  position: relative;
+  z-index: -1;
+}
+
+.circle {
+  height: 180px;
+  width: 180px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 85px;
+  left: 294px;
+}
+
+.background {
+  background-color: green;
+  height: 350px;
+  width: 800px;
+}
+
+/* palestine flag part */
+
+.palestine_flag {
+  width: 800px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.color_bar {
+  background-color: black;
+  flex: 1;
+}
+
+.color_bar:nth-child(2) {
+  background-color: whitesmoke;
+}
+
+.color_bar:nth-child(3) {
+  background-color: green;
+}
+
+.triangle_bar {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  background-color: red;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
